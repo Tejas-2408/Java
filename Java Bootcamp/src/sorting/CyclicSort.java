@@ -8,9 +8,11 @@ import java.util.Arrays;
 public class CyclicSort {
     public static void main(String[] args) {
         int[] arr = {2,3,1,5,4};
-        System.out.println(Arrays.toString(arr));
-        cyclicSort(arr);
-        System.out.println(Arrays.toString(arr));
+        int[] arr2 = {5,4,3,2,1};
+        int[] arr3 = {3,5,1,2,4};
+        System.out.println(Arrays.toString(arr3));
+        cyclicSort(arr3);
+        System.out.println(Arrays.toString(arr3));
     }
 
     public static void cyclicSort(int[] arr){
