@@ -15,8 +15,8 @@ public class Triangles {
 //        rightAngleTriangle(4);
 //        invertedRightAngle(5);
 //        numberRightAngle(5);
-//        rotatedTriangle(5);
-        numberTriangle(5);
+        rotatedTriangle(5);
+//        numberTriangle(5);
     }
 
     // Right Angle Triangle
