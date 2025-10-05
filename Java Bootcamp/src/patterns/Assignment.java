@@ -71,6 +71,17 @@ public class Assignment {
 //        }
 
         // pattern 8
+//        for(int i=1;i<=n;i++){
+//            int totalSpaces = n-i;
+//            for(int j=0;j<totalSpaces;j++){
+//                System.out.print(" ");
+//            }
+//            for(int j=0;j<2*i-1;j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+
 
 
     }
