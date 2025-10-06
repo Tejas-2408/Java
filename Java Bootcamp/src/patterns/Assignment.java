@@ -107,16 +107,30 @@ public class Assignment {
 //        }
 
         // Pattern 11
-        for(int i=n;i>0;i--){
-            int totalSpaces = n-i;
+//        for(int i=n;i>0;i--){
+//            int totalSpaces = n-i;
+//            for(int j=0;j<totalSpaces;j++){
+//                System.out.print(" ");
+//            }
+//            for(int j=0;j<i;j++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+        // Pattern 12
+        for(int i=0;i<2*n;i++){
+            int totalSpaces = i<n?i:(2*n)-i-1;
+            int totalStars = i<n?n-i:i-n+1;
+
             for(int j=0;j<totalSpaces;j++){
                 System.out.print(" ");
             }
-            for(int j=0;j<i;j++){
+
+            for(int j=0;j<totalStars;j++){
                 System.out.print("* ");
             }
             System.out.println();
         }
-
     }
 }
