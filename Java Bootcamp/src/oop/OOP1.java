@@ -36,10 +36,14 @@ class Students{
     String name;
     float marks;
 
+//    Students(){
+//        this.rollno = 0;
+//        this.name = "Random";
+//        this.marks = 0.0f;
+//    }
+    // constructor calling constructor
     Students(){
-        this.rollno = 0;
-        this.name = "Random";
-        this.marks = 0.0f;
+        this(1,"Random",0.0f);
     }
 
     Students(int rollno,String name,float marks){
