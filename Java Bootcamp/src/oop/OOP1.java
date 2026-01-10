@@ -22,6 +22,11 @@ public class OOP1 {
 
         mani.changeName("Tejas");
         System.out.println(mani.name);
+
+        Students random = new Students(tejas); // random will replace this and tejas will replace other in constructor
+        System.out.println(random.name);
+        System.out.println(random.rollno);
+        System.out.println(random.marks);
     }
 
 }
@@ -41,6 +46,12 @@ class Students{
         this.rollno = rollno;
         this.name = name;
         this.marks = marks;
+    }
+
+    Students(Students other){
+        this.rollno = other.rollno;
+        this.name = other.name;
+        this.marks = other.marks;
     }
 
     void greeting(){
