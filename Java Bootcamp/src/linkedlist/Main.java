@@ -43,6 +43,8 @@ public class Main {
         cLL.insertAfterTail(5);
         cLL.insertAfterTail(6);
         cLL.display();
+        cLL.delete(5);
+        cLL.display();
 
     }
 }

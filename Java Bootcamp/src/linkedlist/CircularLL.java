@@ -43,7 +43,14 @@ public class CircularLL {
         }
     }
 
+    public void delete(int val){
+        Node node = head;
+        while(node.next.value != val){
+            node = node.next;
+        }
 
+        node.next = node.next.next;
+    }
 
 
     private class Node{
