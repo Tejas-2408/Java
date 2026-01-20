@@ -23,16 +23,26 @@ public class Main {
 //        ll1.delete(2);
 //        ll1.display();
 
-        DoublyLL dll = new DoublyLL();
-        dll.insertFirst(5);
-        dll.insertFirst(3);
-        dll.insertFirst(8);
-        dll.insertFirst(10);
-        dll.insertFirst(1);
-        dll.insertLast(2);
-        dll.insertLast(3);
-        dll.display();
-        dll.insert(24,1);
-        dll.display();
+//        DoublyLL dll = new DoublyLL();
+//        dll.insertFirst(5);
+//        dll.insertFirst(3);
+//        dll.insertFirst(8);
+//        dll.insertFirst(10);
+//        dll.insertFirst(1);
+//        dll.insertLast(2);
+//        dll.insertLast(3);
+//        dll.display();
+//        dll.insert(24,1);
+//        dll.display();
+
+        CircularLL cLL = new CircularLL();
+        cLL.insertBeforeHead(4);
+        cLL.insertBeforeHead(3);
+        cLL.insertBeforeHead(2);
+        cLL.insertBeforeHead(1);
+        cLL.insertAfterTail(5);
+        cLL.insertAfterTail(6);
+        cLL.display();
+
     }
 }
