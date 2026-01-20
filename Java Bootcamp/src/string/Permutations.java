@@ -7,8 +7,8 @@ public class Permutations {
     public static void main(String[] args) {
         String s = "abc";
 //        permutations("",s);
-//        System.out.println(permutationList("",s));
-        System.out.println(countPermutation("",s));
+        System.out.println(permutationList("",s));
+//        System.out.println(countPermutation("",s));
     }
 
     static void permutations(String p, String up){
