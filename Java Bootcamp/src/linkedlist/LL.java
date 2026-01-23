@@ -56,6 +56,21 @@ public class LL {
         size++;
     }
 
+    public void insertRec(int val, int index){
+        head = insertion(val,index,head);
+    }
+
+    public Node insertion(int val, int index, Node node){
+        if(index==0){
+            Node temp = new Node(val,node);
+            size++;
+            return temp;
+        }
+
+        node.next = insertion(val, --index, node.next);
+        return node;
+    }
+
     public int deleteFirst(){
         int val = head.value;
         if(head.next == null){

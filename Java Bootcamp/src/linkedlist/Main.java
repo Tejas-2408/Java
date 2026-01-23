@@ -7,21 +7,23 @@ public class Main {
         LinkedList<Integer> ll = new LinkedList<>();
         ll.add(24);
 
-//        LL ll1 = new LL();
-//        ll1.insertFirst(3);
-//        ll1.insertFirst(4);
-//        ll1.insertFirst(5);
-//        ll1.insertFirst(6);
-//        ll1.insertLast(2);
-//        ll1.insertLast(1);
-//        ll1.insert(14,3);
-//        ll1.display();
-//        ll1.deleteFirst();
-//        ll1.display();
-//        ll1.deleteLast();
-//        ll1.display();
-//        ll1.delete(2);
-//        ll1.display();
+        LL ll1 = new LL();
+        ll1.insertFirst(3);
+        ll1.insertFirst(4);
+        ll1.insertFirst(5);
+        ll1.insertFirst(6);
+        ll1.insertLast(2);
+        ll1.insertLast(1);
+        ll1.insert(14,3);
+        ll1.display();
+        ll1.deleteFirst();
+        ll1.display();
+        ll1.deleteLast();
+        ll1.display();
+        ll1.delete(2);
+        ll1.display();
+        ll1.insertRec(34,1);
+        ll1.display();
 
 //        DoublyLL dll = new DoublyLL();
 //        dll.insertFirst(5);
@@ -35,16 +37,16 @@ public class Main {
 //        dll.insert(24,1);
 //        dll.display();
 
-        CircularLL cLL = new CircularLL();
-        cLL.insertBeforeHead(4);
-        cLL.insertBeforeHead(3);
-        cLL.insertBeforeHead(2);
-        cLL.insertBeforeHead(1);
-        cLL.insertAfterTail(5);
-        cLL.insertAfterTail(6);
-        cLL.display();
-        cLL.delete(5);
-        cLL.display();
+//        CircularLL cLL = new CircularLL();
+//        cLL.insertBeforeHead(4);
+//        cLL.insertBeforeHead(3);
+//        cLL.insertBeforeHead(2);
+//        cLL.insertBeforeHead(1);
+//        cLL.insertAfterTail(5);
+//        cLL.insertAfterTail(6);
+//        cLL.display();
+//        cLL.delete(5);
+//        cLL.display();
 
     }
 }
