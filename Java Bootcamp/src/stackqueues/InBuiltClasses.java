@@ -1,8 +1,6 @@
 package stackqueues;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class InBuiltClasses {
     public static void main(String[] args) {
@@ -27,12 +25,22 @@ public class InBuiltClasses {
         queue.add(4);
         queue.add(5);
 
-        System.out.println(queue.peek());
-        System.out.println(queue.remove());
-        System.out.println(queue.remove());
-        System.out.println(queue.remove());
+//        System.out.println(queue.peek());
+//        System.out.println(queue.remove());
+//        System.out.println(queue.remove());
+//        System.out.println(queue.remove());
 
-
+        // add and remove from both sides
+        // not thread safe
+        // faster than stack and LinkedList queue
+        Deque<Integer> dq = new ArrayDeque<>();
+        dq.add(1);
+        dq.addFirst(0);
+        dq.addLast(5);
+        dq.add(10);
+        System.out.println(dq.remove());
+        System.out.println(dq.remove());
+        System.out.println(dq.remove());
 
     }
 }
