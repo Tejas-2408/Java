@@ -8,5 +8,6 @@ public class Main {
         BinaryTree bt = new BinaryTree();
         bt.populate(sc);
         bt.display();
+        bt.prettyDisplay();
     }
 }
