@@ -63,6 +63,21 @@ public class BinarySearchTree {
         display(node.right, "Right child of "+ node.getValue() + " : ");
     }
 
+    public void sortedInsert(int[] value){
+        sortedInsert(value, 0, value.length);
+    }
+
+    public void sortedInsert(int value[], int s, int e){
+        if(s >= e){
+            return;
+        }
+
+        int m = s + (e-s)/2;
+        insert(value[m]);
+        sortedInsert(value,s,m);
+        sortedInsert(value,m+1,e);
+    }
+
     public void insert(int value){
         root = insert(value,root);
     }
@@ -94,6 +109,49 @@ public class BinarySearchTree {
             return true;
         }
         return Math.abs(getHeight(node.left) - getHeight(node.right)) <= 1 && balanced(node.left) && balanced(node.right);
+    }
+
+    public void preOrder(){ // N -> L -> R
+        preOrder(root);
+    }
+
+    private void preOrder(Node node) {
+        if(node == null){
+            return;
+        }
+
+        System.out.print(node.getValue() + ",");
+        preOrder(node.left);
+        preOrder(node.right);
+
+    }
+
+    public void inOrderTraversal(){ // L->N->R
+        inOrderTraversal(root);
+    }
+
+    private void inOrderTraversal(Node node) {
+        if(node == null){
+            return;
+        }
+
+        inOrderTraversal(node.left);
+        System.out.print(node.getValue() + ",");
+        inOrderTraversal(node.right);
+    }
+
+    public void postOrderTraversal(){
+        postOrderTraversal(root);
+    }
+
+    private void postOrderTraversal(Node node) {
+        if (node == null) {
+            return;
+        }
+
+        postOrderTraversal(node.left);
+        postOrderTraversal(node.right);
+        System.out.print(node.getValue() + ",");
     }
 
 }
