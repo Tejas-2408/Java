@@ -1,0 +1,26 @@
+1. Insert the element normally in BST
+2. Identify the node which make the tree unbalanced from bottom-up approach
+3. Rotate the tree from the node using the 4 Rules
+
+Abbrevations:
+p -> parent node (from whose left and right are not balanced)
+c -> child node
+g -> grand child node under which the new item is inserted
+t1 -> new inserted item
+
+
+4 Rules:
+1. If c and g both are on left-left case of p
+then right rotate p
+
+2. if c is left and g is on right of p then it is left-right case
+then
+a. make it in single line both c and g in left of p so left rotate c first
+b. once done follow 1st rule and rotate p
+
+3. if c and g both are on right of p then it is right-right case
+and left rotate p
+
+4. if c is on right of p and g is on left of c, then it is right-left case
+a. right rotate c first
+b. follow rule 3 and rotate p left
