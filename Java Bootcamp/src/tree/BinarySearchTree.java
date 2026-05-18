@@ -1,7 +1,5 @@
 package tree;
 
-import java.util.Scanner;
-
 public class BinarySearchTree {
 
     private Node root;
@@ -9,7 +7,7 @@ public class BinarySearchTree {
     public BinarySearchTree() {
     }
 
-    private static class Node{
+    private static class Node {
         private int value;
         private int height;
         private Node left;
